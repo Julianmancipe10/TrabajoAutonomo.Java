@@ -1,0 +1,38 @@
+package structurasDeDatosHashMap;
+
+import java.util.HashMap;
+import javax.swing.JOptionPane;
+
+public class EjemploTres {
+    // HashMap para almacenar estudiantes (nombre -> edad)
+    private HashMap<String, Integer> estudiantes;
+
+    // Constructor para inicializar el HashMap
+    public EjemploTres() {
+        estudiantes = new HashMap<>();
+    }
+
+    // Método principal para iniciar el programa
+    public void iniciar() {
+        String menu = "MENU INVESTIGACION\n\n";
+        menu += "1. Registrar estudiantes\n";
+        menu += "2. Mostrar nombres de todos los estudiantes\n";
+        menu += "3. Mostrar lista de estudiantes con sus edades\n";
+        menu += "4. Mostrar suma de todas las edades\n";
+        menu += "5. Mostrar promedio de edades de estudiantes\n";
+        menu += "6. Mostrar estudiantes mayores de 18 años\n";
+        menu += "7. Consultar estudiante por nombre\n";
+        menu += "8. Salir\n";
+
+        int opc = 0;
+
+        do {
+            opc = Integer.parseInt(JOptionPane.showInputDialog(menu));
+
+            presentarMenu(opc);
+
+        } whi
+		
+		
+	}
+}

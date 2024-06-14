@@ -1,0 +1,7 @@
+package structurasDeDatosHashMap;
+
+public class ejemploTres {
+	public static void main(String[] args) {
+		
+	}
+}

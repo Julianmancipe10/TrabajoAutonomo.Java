@@ -1,0 +1,17 @@
+package estructurasIterativasDoWhile;
+
+import javax.swing.JOptionPane;
+
+public class ejemploDos {
+    public static void main(String[] args) {
+        String fruta;
+
+        do {
+            fruta = JOptionPane.showInputDialog("Ingrese una fruta");
+        } while (fruta != null && !fruta.equals("manzana"));
+
+        if (fruta != null && fruta.equals("manzana")) {
+            System.out.println("Su fruta es manzana");
+        }
+    }
+}

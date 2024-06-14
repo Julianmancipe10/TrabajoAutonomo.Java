@@ -1,0 +1,17 @@
+
+public class EjemploTres {
+	public static void main (String[]args) {
+		//caracteres
+		char letraA= 'a';
+		char letraANumerico= 61;
+		
+		System.out.println(letraA);
+		System.out.println(letraANumerico);
+		// boleanos 
+		boolean verdadero = true;
+		boolean falso = false;
+		
+		System.out.println( "la letra a es = a  " + verdadero);
+		System.out.println( "Messi es mejor que cristiano? " +falso);		
+	}
+}

@@ -1,0 +1,14 @@
+package constantesEnJava;
+
+import javax.swing.JOptionPane;
+
+public class ejemploDos {
+	public static void main(String[]args) {
+	
+		
+		final int EDAD = 18;
+		String nombre = JOptionPane.showInputDialog("Ingrese su nombre");
+		System.out.println("Hola Señor " + nombre + " Su edad es :" + EDAD);
+		 
+	}
+}

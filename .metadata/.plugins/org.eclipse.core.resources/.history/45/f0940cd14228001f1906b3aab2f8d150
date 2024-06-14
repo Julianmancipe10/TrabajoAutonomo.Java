@@ -1,0 +1,22 @@
+package estructurasDeControlEnCondicionalesSimplesYDobles;
+
+public class ejemploTres {
+	public static void main(String[]args) {
+		
+		// Declaramos dos variables de tipo entero:
+        int credito, edad;
+
+        // Inicializamos las variables:
+        credito = 1000;
+        edad = 18;
+
+        if (credito > 1000 & edad >= 18){ // Operador condicional simple '&'
+        	System.out.println("su credito ha sido aprobdo");
+        }
+
+        if (credito > 1000 && edad >= 18){ // Operador condicional doble '&&'
+           
+        }
+
+    }
+}

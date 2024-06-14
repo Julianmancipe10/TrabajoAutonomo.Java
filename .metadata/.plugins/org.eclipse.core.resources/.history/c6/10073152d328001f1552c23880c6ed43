@@ -1,0 +1,20 @@
+package estructurasIterativasFor;
+
+import javax.swing.JOptionPane;
+
+public class ejemploTres {
+	public static void main (String[]args) {
+	
+		int edad=Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad"));
+		
+		if(edad >= 18) {
+		
+			for(int i=0; i<=1; i++) {
+			
+				System.out.println("Su Usted es mayor de edad");
+			}
+		}else {
+			System.out.println("Usted es menor de edad");
+		}
+	}
+}

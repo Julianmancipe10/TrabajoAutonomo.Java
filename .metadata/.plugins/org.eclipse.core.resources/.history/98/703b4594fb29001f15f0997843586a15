@@ -1,0 +1,121 @@
+package structurasDeDatosHashMap;
+
+import java.util.HashMap;
+import javax.swing.JOptionPane;
+
+public class ejemploTrs {
+    // HashMap para almacenar estudiantes (nombre -> edad)
+    private HashMap<String, Integer> estudiantes;
+
+    // Constructor para inicializar el HashMap
+    public ejemploTrs() {
+        estudiantes = new HashMap<>();
+    }
+
+    // iniciar el programa
+    public void iniciar() {
+        String menu = "MENU INVESTIGACION\n\n";
+        menu += "1. Registrar estudiantes\n";
+        menu += "2. Mostrar nombres de todos los estudiantes\n";
+        menu += "3. Mostrar lista de estudiantes con sus edades\n";
+        menu += "4. Mostrar suma de todas las edades\n";
+        menu += "5. Mostrar promedio de edades de estudiantes\n";
+        menu += "6. Mostrar estudiantes mayores de 18 años\n";
+        menu += "7. Consultar estudiante por nombre\n";
+        menu += "8. Salir\n";
+
+        int opc = 0;
+
+        do {
+            opc = Integer.parseInt(JOptionPane.showInputDialog(menu));
+
+            presentacionMenu(opc);
+
+        }while (opc != 8);
+		
+		
+	}
+
+
+		//menu presentacion
+		
+		void presentacionMenu(int opc) {
+			
+			switch (opc) {
+            case 1:
+                registrarEstudiantes();
+                break;
+            case 2:
+                mostrarNombresEstudiantes();
+                break;
+            case 3:
+                mostrarListaEstudiantes();
+                break;
+            case 4:
+                mostrarSumaEdades();
+                break;
+            case 5:
+                mostrarPromedioEdades();
+                break;
+            case 6:
+                mostrarEstudiantesMayoresDe18();
+                break;
+            case 7:
+                consultarEstudiantePorNombre();
+                break;
+            case 8:
+                System.out.println("Saliendo...");
+                break;
+            default:
+                break;
+		
+			}
+	}
+
+		private void consultarEstudiantePorNombre() {
+			String nombreEstudiante =JOptionPane.showInputDialog("Ingrese el estudiantes");
+			int edadEstudiante =Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad del estudiantes"));
+			estudiantes.put(nombreEstudiante, edadEstudiante);
+		}
+		
+			
+		
+		private void mostrarNombresEstudiantes() {
+			System.out.println("Nombres de todos los estudiantes registrados:");
+		     for (String nombre : estudiantes.keySet()) {
+		         
+		    	 System.out.println(nombre);
+		        
+		     }
+			
+		}
+		
+		private void mostrarListaEstudiantes() {
+			
+			
+		}
+
+		private void mostrarEstudiantesMayoresDe18() {
+			
+			
+		}
+
+		private void mostrarPromedioEdades() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		private void mostrarSumaEdades() {
+			// TODO Auto-generated method stub
+			
+		}
+
+
+
+
+		private void registrarEstudiantes() {
+			// TODO Auto-generated method stub
+			
+		}
+		
+}

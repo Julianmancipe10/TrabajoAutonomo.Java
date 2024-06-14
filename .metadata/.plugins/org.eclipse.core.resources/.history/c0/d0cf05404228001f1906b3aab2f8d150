@@ -1,0 +1,14 @@
+package estructurasDeControlEnCondicionalesSimplesYDobles;
+
+import javax.swing.JOptionPane;
+
+public class ejemploUno {
+    public static void main(String[] args) {
+        
+        String fruta = JOptionPane.showInputDialog("Ingrese fruta");
+                
+        if (fruta == ("manzana")) {
+            System.out.println("Su fruta es manzana");
+        }
+    }
+}

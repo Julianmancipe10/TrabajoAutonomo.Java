@@ -1,0 +1,10 @@
+
+public class EjemploUno {
+	public static void main(String[]args) {
+		
+		byte diasMes= 31;
+		short diasLustros= (12*31)*5;
+		int velocidadLuz= 22021020;
+		long añosLuz= velocidadLuz*365;
+	}
+}
